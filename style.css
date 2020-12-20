@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/*---------------------*/
+/*       HEADER        */
+/*---------------------*/
+
+header {
+    background-color: #150485;
+    position: sticky;
+    z-index: 9999;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.header-h1 {
+    margin-left: 0;
+}
+
+.title {
+    display: absolute;
+    color: white;
+    padding: 1rem;
+}
+
+.logo {
+    display: absolute;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.style:hover {
+    color: #03c4a1;
+    transition: 1s;
+    transition-property: color;
+}
+
+label {
+    display: none;
+}
+
+.icon_btn {
+    display: inline;
+    color: white;
+    padding-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.icons {
+    display: none;
+}
+
+label #sidebar_btn {
+    color: white;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+/*---------------------*/
+/*        BODY         */
+/*---------------------*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*---------------------*/
+/*      MEDIA 750      */
+/*---------------------*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 750px) {
+
+
+.header-container {
+    align-items: center;
+}
+
+label {
+    display: flex;
+    padding-top: .5rem;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+    display: flex;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+label #sidebar_btn:hover {
+    color: #1983D3;
+}
+
+#check:checked ~ label #sidebar_btn {
+    border: none;
+    transition: 1s;
+    display: flex;
+}
+
+.icons {
+    display: flex;
+    opacity: 0;
+    flex-wrap: wrap;
+    padding-top: .5rem;
+    padding-left: 5rem;
+}
+
+.icons a {
+    justify-content: space-between;
+    padding-left: 1.5rem;
+}
+
+#check:checked ~ .icons {
+    display: flex;
+    opacity: 1;
+    transition: 1s;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    font-size: 3rem;
+    z-index: 2;
+    padding-top: .5rem;
+    padding-left: 1rem;
+
+}
+
+}
+
+/*---------------------*/
+/*      MEDIA 500      */
+/*---------------------*/
+
+@media screen and (max-width: 400px) {
+
+    .header-container {
+        align-items: center;
+    }
+    
+    label {
+        display: flex;
+        padding-top: .5rem;
+    }
+    
+    label #sidebar_btn {
+        z-index: 1;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: color;
+        display: flex;
+        border: 3px solid white;
+        padding: 5px;
+    }
+    
+    label #sidebar_btn:hover {
+        color: #1983D3;
+    }
+    
+    #check:checked ~ label #sidebar_btn {
+        border: none;
+        transition: 1s;
+        display: flex;
+    }
+    
+    .icons {
+        display: flex;
+        opacity: 0;
+        flex-wrap: wrap;
+        padding-top: .5rem;
+        padding-left: 1rem;
+    }
+    
+    .icons a {
+        justify-content: space-between;
+        padding-left: 1rem;
+    }
+    
+    #check:checked ~ .icons {
+        display: flex;
+        opacity: 1;
+        transition: 1s;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .logo {
+        font-size: 3rem;
+        z-index: 2;
+        padding-top: .5rem;
+        padding-left: 1rem;
+    }
+    
+    
+    }
