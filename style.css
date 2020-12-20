@@ -169,12 +169,13 @@ body {
     margin-right: auto;
     border-radius: 150px;
     border: 6px solid #fff;
-    transition-duration: 0.4s;
+    transition-duration: 0.7s;
     transition-property: transform;
 }
 
 .about-img img:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,.8);
 }
 
 .about-bottom {
@@ -182,7 +183,7 @@ body {
     padding: 2rem;
     font-size: 1.2rem;
     padding-bottom: .5rem;
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 
 .about-media {
@@ -304,7 +305,7 @@ label #sidebar_btn:hover {
     padding: 2rem;
     font-size: 1.2rem;
     padding-bottom: .5rem;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
 }
 
 }
