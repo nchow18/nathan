@@ -184,6 +184,7 @@ body {
     font-size: 1.2rem;
     padding-bottom: .5rem;
     padding-top: 8rem;
+    line-height: 2.5rem;
 }
 
 .about-media {
@@ -215,7 +216,7 @@ body {
 /*---------------------*/
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
 
 /* HEADER LINKS */
 
@@ -281,16 +282,16 @@ label #sidebar_btn:hover {
 
 .about-img img {
     z-index: 1;
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     position: relative;
-    margin-top: -6rem;
+    margin-top: -8rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 100px;
+    border-radius: 150px;
     border: 6px solid #fff;
-    transition-duration: 0.4s;
+    transition-duration: 0.7s;
     transition-property: transform;
 }
 
@@ -305,7 +306,39 @@ label #sidebar_btn:hover {
     padding: 2rem;
     font-size: 1.2rem;
     padding-bottom: .5rem;
-    padding-top: 2.5rem;
+    padding-top: 8rem;
+}
+
+}
+
+/*---------------------*/
+/*      MEDIA 750      */
+/*---------------------*/
+
+@media screen and (max-width: 750px) {
+
+.about-img img {
+    z-index: 1;
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    margin-top: -8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 150px;
+    border: 6px solid #fff;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.about-bottom {
+    color: black;
+    padding: 2rem;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+    padding-top: 7.5rem;
+    line-height: 2rem;
 }
 
 }
@@ -391,6 +424,15 @@ label #sidebar_btn:hover {
     border: 6px solid #fff;
     transition-duration: 0.4s;
     transition-property: transform;
+}
+
+.about-bottom {
+    color: black;
+    padding: 2rem;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+    padding-top: 2rem;
+    line-height: 1.5rem;
 }
 
 
